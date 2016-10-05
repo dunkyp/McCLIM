@@ -1,7 +1,8 @@
 
 (defsystem #:clim-lisp
   :serial t
-  :depends-on (#:trivial-gray-streams)
+  :depends-on (#:trivial-gray-streams
+               #:closer-mop)
   :components (;; First possible patches
                (:file "patch")
                (:module "Lisp-Dep"
